@@ -1,3 +1,4 @@
+import 'package:bmi_calculate/util/colors_const.dart';
 import 'package:bmi_calculate/util/strings_const.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -68,7 +69,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                 Text(
                   StringConst.text,
                   style: TextStyle(
-                    color: Colors.white,
+                    color: ColorsConst.textColor,
                     fontSize: MediaQuery.of(context).size.height * 0.04,
                     fontWeight: FontWeight.bold,
                   ),
@@ -89,7 +90,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                             onPressed: () {},
                             icon: const Icon(
                               Icons.male,
-                              color: Colors.white,
+                              color: ColorsConst.iconColor,
                               size: 80,
                             ),
                           ),
@@ -113,13 +114,13 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                             onPressed: () {},
                             icon: const Icon(
                               Icons.female_outlined,
-                              color: Colors.white,
+                              color: ColorsConst.iconColor,
                               size: 80,
                             ),
                           ),
                           const Text(
                             StringConst.textFemale,
-                            style: TextStyle(color: Colors.white, fontSize: 30),
+                            style: TextStyle(color: ColorsConst.textColor, fontSize: 30),
                           ),
                         ],
                       ),
@@ -138,7 +139,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                     children: [
                       const Text(
                         StringConst.textHEIGHT,
-                        style: TextStyle(color: Colors.white, fontSize: 30),
+                        style: TextStyle(color: ColorsConst.textColor, fontSize: 30),
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -146,11 +147,11 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                           Text(
                             height.toStringAsFixed(2),
                             style: const TextStyle(
-                                color: Colors.white, fontSize: 40),
+                                color: ColorsConst.textColor, fontSize: 40),
                           ),
                           const Text(
                             StringConst.textCm,
-                            style: TextStyle(color: Colors.white, fontSize: 25),
+                            style: TextStyle(color: ColorsConst.textColor, fontSize: 25),
                           ),
                         ],
                       ),
@@ -190,18 +191,18 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                               Text(
                                 StringConst.textWEIGHT,
                                 style: TextStyle(
-                                    color: Colors.white, fontSize: 30),
+                                    color: ColorsConst.textColor, fontSize: 30),
                               ),
                               Text(
                                 StringConst.textKg,
-                                style: TextStyle(color: Colors.white),
+                                style: TextStyle(color: ColorsConst.textColor),
                               )
                             ],
                           ),
                           Text(
                             weight.toString(),
                             style: const TextStyle(
-                              color: Colors.white,
+                              color: ColorsConst.textColor,
                               fontSize: 40,
                               fontWeight: FontWeight.bold,
                             ),
@@ -214,7 +215,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                                 icon: const Center(
                                   child: Icon(
                                     Icons.remove,
-                                    color: Colors.white,
+                                    color: ColorsConst.iconColor,
                                     size: 25,
                                   ),
                                 ),
@@ -229,7 +230,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                                 icon: const Center(
                                   child: Icon(
                                     Icons.add,
-                                    color: Colors.white,
+                                    color: ColorsConst.iconColor,
                                     size: 25,
                                   ),
                                 ),
@@ -256,12 +257,12 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                         children: [
                           const Text(
                             StringConst.textAGE,
-                            style: TextStyle(color: Colors.white, fontSize: 30),
+                            style: TextStyle(color: ColorsConst.textColor, fontSize: 30),
                           ),
                           Text(
                             age.toString(),
                             style: const TextStyle(
-                              color: Colors.white,
+                              color: ColorsConst.textColor,
                               fontSize: 40,
                               fontWeight: FontWeight.bold,
                             ),
@@ -274,7 +275,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                                 icon: const Center(
                                   child: Icon(
                                     Icons.remove,
-                                    color: Colors.white,
+                                    color: ColorsConst.iconColor,
                                     size: 25,
                                   ),
                                 ),
@@ -289,7 +290,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                                 icon: const Center(
                                   child: Icon(
                                     Icons.add,
-                                    color: Colors.white,
+                                    color:ColorsConst.iconColor,
                                     size: 25,
                                   ),
                                 ),
@@ -334,7 +335,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                         gravity: ToastGravity.CENTER,
                         timeInSecForIosWeb: 1,
                         backgroundColor: Colors.black,
-                        textColor: Colors.white,
+                        textColor: ColorsConst.toastTextextColor,
                         fontSize: 16.0
                     );
 
@@ -342,7 +343,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                   child: const Text(
                     StringConst.textButton,
                     style: TextStyle(
-                      color: Colors.white,
+                      color: ColorsConst.textColor,
                       fontSize: 20,
                     ),
                   ),
