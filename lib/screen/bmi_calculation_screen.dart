@@ -1,3 +1,4 @@
+import 'package:bmi_calculate/util/strings_const.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
@@ -14,7 +15,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
 
   int age = 20;
   int weight = 40;
-  String result = '';
+  String result = StringConst.result;
 
   void calculateBMI() {
     double meter = height / 100;
@@ -65,7 +66,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Text(
-                  "BMI CALCULATOR",
+                  StringConst.text,
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: MediaQuery.of(context).size.height * 0.04,
@@ -93,7 +94,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                             ),
                           ),
                           const Text(
-                            "Male",
+                            StringConst.textMale,
                             style: TextStyle(color: Colors.white, fontSize: 30),
                           ),
                         ],
@@ -117,7 +118,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                             ),
                           ),
                           const Text(
-                            "Female",
+                            StringConst.textFemale,
                             style: TextStyle(color: Colors.white, fontSize: 30),
                           ),
                         ],
@@ -136,7 +137,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const Text(
-                        "HEIGHT",
+                        StringConst.textHEIGHT,
                         style: TextStyle(color: Colors.white, fontSize: 30),
                       ),
                       Row(
@@ -148,7 +149,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                                 color: Colors.white, fontSize: 40),
                           ),
                           const Text(
-                            "cm",
+                            StringConst.textCm,
                             style: TextStyle(color: Colors.white, fontSize: 25),
                           ),
                         ],
@@ -187,12 +188,12 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "WEIGHT",
+                                StringConst.textWEIGHT,
                                 style: TextStyle(
                                     color: Colors.white, fontSize: 30),
                               ),
                               Text(
-                                '(kg)',
+                                StringConst.textKg,
                                 style: TextStyle(color: Colors.white),
                               )
                             ],
@@ -254,7 +255,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           const Text(
-                            "AGE",
+                            StringConst.textAGE,
                             style: TextStyle(color: Colors.white, fontSize: 30),
                           ),
                           Text(
@@ -320,11 +321,11 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                     double bmi = double.parse(result);
 
                     if (bmi <= 18.5) {
-                      message = 'Under weight';
+                      message = StringConst.textUnderweight;
                     } else if (bmi <= 24.9) {
-                      message = 'Normal weight';
+                      message = StringConst.textNormalWeight;
                     } else {
-                      message = 'Over weight';
+                      message = StringConst.textOverweight;
                     }
 
                     Fluttertoast.showToast(
@@ -339,7 +340,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
 
                   },
                   child: const Text(
-                    "CALCULATE",
+                    StringConst.textButton,
                     style: TextStyle(
                       color: Colors.white,
                       fontSize: 20,
