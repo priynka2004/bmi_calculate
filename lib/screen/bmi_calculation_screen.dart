@@ -55,7 +55,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF242225),
+      backgroundColor: ColorsConst.containerColor,
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.only(
@@ -81,7 +81,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                       height: MediaQuery.of(context).size.height * 0.2,
                       width: MediaQuery.of(context).size.width * 0.4,
                       decoration: BoxDecoration(
-                        color: const Color(0xFF484149),
+                        color: ColorsConst.containerColor,
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Column(
@@ -105,7 +105,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                       height: MediaQuery.of(context).size.height * 0.2,
                       width: MediaQuery.of(context).size.width * 0.4,
                       decoration: BoxDecoration(
-                        color: const Color(0xFF484149),
+                        color: ColorsConst.containerColor,
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Column(
@@ -131,7 +131,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                   height: 160,
                   width: 400,
                   decoration: BoxDecoration(
-                    color: const Color(0xFF484149),
+                    color: ColorsConst.containerColor,
                     borderRadius: BorderRadius.circular(20),
                   ),
                   child: Column(
@@ -179,7 +179,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                       height: MediaQuery.of(context).size.height * 0.25,
                       width: MediaQuery.of(context).size.width * 0.4,
                       decoration: BoxDecoration(
-                        color: const Color(0xFF484149),
+                        color: ColorsConst.containerColor,
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Column(
@@ -221,7 +221,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                                 ),
                                 style: ButtonStyle(
                                   backgroundColor: MaterialStateProperty.all(
-                                    const Color(0xFF615664),
+                                    ColorsConst.containerColor,
                                   ),
                                 ),
                               ),
@@ -236,7 +236,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                                 ),
                                 style: ButtonStyle(
                                   backgroundColor: MaterialStateProperty.all(
-                                    const Color(0xFF615664),
+                                    ColorsConst.containerColor,
                                   ),
                                 ),
                               ),
@@ -249,7 +249,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                       height: MediaQuery.of(context).size.height * 0.25,
                       width: MediaQuery.of(context).size.width * 0.4,
                       decoration: BoxDecoration(
-                        color: const Color(0xFF484149),
+                        color: ColorsConst.containerColor,
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Column(
@@ -281,7 +281,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                                 ),
                                 style: ButtonStyle(
                                   backgroundColor: MaterialStateProperty.all(
-                                    const Color(0xFF615664),
+                                    ColorsConst.containerColor,
                                   ),
                                 ),
                               ),
@@ -296,7 +296,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                                 ),
                                 style: ButtonStyle(
                                   backgroundColor: MaterialStateProperty.all(
-                                    const Color(0xFF615664),
+                                     ColorsConst.containerColor,
                                   ),
                                 ),
                               ),
@@ -310,7 +310,7 @@ class _BmiCalculationScreenState extends State<BmiCalculationScreen> {
                 TextButton(
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(
-                      const Color(0xFF615664),
+                        ColorsConst.containerColor,
                     ),
                     minimumSize: MaterialStateProperty.all(
                       const Size(400, 40),
